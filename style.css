@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap');
+
+*
+{
+  text-decoration: none;
+  
+  margin: 0;
+  padding: 0;
+
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body
+{
+  height: 100vh;
+  width: 100vw;
+}
+
+nav
+{
+  position: fixed;
+  top: 0;
+
+  height: 20vh;
+  width: 100%;
+  font-size: 20px;
+
+  background: linear-gradient(to bottom, black, transparent);
+
+  opacity: 0.8;
+
+  z-index: 1000;
+}
+
+nav ul
+{
+  display: flex;
+  flex-direction: row;
+
+  margin: 40px;
+  padding: 0 20px;
+  gap: 100px;
+
+  align-items: center;
+  justify-content: right;
+}
+
+nav ul li
+{
+  color: white;
+
+  font-family: 'Roboto Condensed', sans-serif;
+  
+  text-transform: uppercase;
+}
+
+nav ul li:hover, .active
+{
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.material-symbols-outlined {
+  overflow: hidden;
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+.logo
+{
+  position: absolute;
+  left: 0;
+
+  margin: 0 30px;
+  font-size: 2em;
+}
+
+a:any-link
+{
+  color: white;
+}
+
+div.centered
+{
+  height: 100vh;
+  width: 100vw;
+
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+
+  letter-spacing: 20px;
+
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: bolder;
+
+  background-image: url('https://wallpaperaccess.com/full/221443.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+p.center-text
+{  
+  color: white;
+  text-transform: uppercase;
+  text-shadow: 0px 0px 8px #a9a9a9;
+
+  font-size: 5em;
+
+  padding: 10px;
+  margin-bottom: 30px;
+
+  animation: fade-up-in 2s 0s linear;
+}
+
+.explore-button
+{
+  padding: 5px 20px;
+  font-size: 1.5em;
+
+  font-weight: bold;
+  text-transform: uppercase;
+  
+  border: 1px solid white;
+  border-radius: 20px;
+  background: transparent;
+}
+
+div.article-container
+{
+  display: flex;
+  flex-direction: column;
+
+  width: 50%;
+  border-radius: 20px;
+
+  align-items: center;
+  justify-content: center;
+}
+
+.section-container
+{
+  height: 50vh;
+  padding: 100px;
+  margin: 150px;
+
+  border-radius: 70px;
+
+  background: linear-gradient(to top, black, transparent);
+}
+
+#img-1
+{
+  overflow: hidden;
+  
+  background-image: url('https://static.vecteezy.com/system/resources/previews/004/338/542/original/abstract-background-dynamic-fluid-shape-soft-gradient-colorful-purple-blue-vector.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#img-2
+{
+  overflow: hidden;
+  
+  background-image: url('https://static.vecteezy.com/system/resources/previews/004/338/542/original/abstract-background-dynamic-fluid-shape-soft-gradient-colorful-purple-blue-vector.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#img-3
+{
+  overflow: hidden;
+  
+  background-image: url('https://static.vecteezy.com/system/resources/previews/004/338/542/original/abstract-background-dynamic-fluid-shape-soft-gradient-colorful-purple-blue-vector.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#img-4
+{
+  overflow: hidden;
+  
+  background-image: url('https://static.vecteezy.com/system/resources/previews/004/338/542/original/abstract-background-dynamic-fluid-shape-soft-gradient-colorful-purple-blue-vector.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.section-container img
+{
+  padding: 0 70px;
+  
+  transform: translateY(90px);
+}
+
+.article
+{
+  padding: 0 70px;
+  width: 50%;
+  float: right;
+
+  transform: translateY(110px);
+}
+
+.article header
+{
+  font-size: 2.5em;
+
+  padding-bottom: 30px;
+
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.article section
+{
+  font-size: 1.3em;
+
+  font-family: 'Roboto Condensed', sans-serif;
+
+  word-spacing: 2px;
+}
+
+@keyframes fade-up-in
+{
+  0%
+  {
+    letter-spacing: 0;
+    transform: translateY(50px);
+    opacity: 0;
+  }
+
+  100%
+  {
+    letter-spacing: 20px;
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
